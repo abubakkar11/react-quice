@@ -13,12 +13,9 @@ function App() {
         path : '/',
         element : <Main></Main>,
         children : [
+        
           {
             path : '/topics',
-            element : <Topics></Topics>
-          },
-          {
-            path : '/',
             // Load Main Topics Api
             loader : async () =>{
             return fetch('https://openapi.programming-hero.com/api/quiz')
