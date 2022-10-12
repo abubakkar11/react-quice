@@ -5,7 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Quiz = ({quiz}) => {
-    // const [anser , setAnswer] = useState([]);
+    const [anser , setAnswer] = useState([]);
     const {question , options , correctAnswer} = quiz;
     console.log(quiz)
     const notify = () => toast(`${correctAnswer}`);
@@ -27,6 +27,7 @@ const Quiz = ({quiz}) => {
                 options.map(option => <QuizOption
                 option = {option}
                 quizAnser = {quizAnser}
+                
                 ></QuizOption>)
                }
             </div>
