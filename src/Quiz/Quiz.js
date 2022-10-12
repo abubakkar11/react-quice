@@ -10,7 +10,7 @@ const Quiz = ({quiz}) => {
     console.log(quiz)
     const notify = () => toast(`${correctAnswer}`);
     const quizAnser = () =>{
-    
+
     }
     return (
    
