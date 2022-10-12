@@ -7,12 +7,12 @@ const Home = () => {
     const topics = useLoaderData();
     return (
         <div>
-            <div className='flex justify-between items-center ml-32 mr-32'>
+            <div className='md:flex justify-between items-center ml-32 mr-32'>
                 <div>
-                <img className='w-60' src={image }alt="" />
+                <img className='w-60' src={image}alt="" />
                 </div>
                 <div>
-                    <h1 className="text-2xl">Are You Ready For Quiz Anser!!! </h1>
+                    <h1 className="text-2xl bg-sky-600 p-5  md:visible rounded-md text-white">Are You Ready For Quiz Anser!!! </h1>
                 </div>
             </div>
             <div className='grid md:grid-cols-4 gap-10 ml-12 p-16'>

@@ -40,6 +40,10 @@ function App() {
             element : <Topics></Topics>,
           },
           {
+            path : '*',
+            element : 'The page is not Found'
+          },
+          {
             path : '/quizs/:quizId',
             loader : async ({params}) =>{
             return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)

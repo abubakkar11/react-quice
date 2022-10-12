@@ -13,7 +13,7 @@ const Statistics = () => {
     return (
         <div>
             <h1 className="text-4xl font-bold text-indigo-600 mt-10">Total Quiz Rechart</h1>
-            <div className='ml-60 mt-20 p-10'>
+            <div className='md:ml-60 mt-20 md:p-10'>
             <LineChart width={500} height={400} data={data}   margin={{
                 top: 5,
                 right: 30,
